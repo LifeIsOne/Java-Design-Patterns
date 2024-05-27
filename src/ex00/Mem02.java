@@ -36,6 +36,8 @@ public class Mem02 {
         // Car의 run()의 오버라이드(무효)되고, Sonata의 run()이 호출.
 
         Car g = new Genesis();  // 메모리 Genesis(run), car(run)
+
+        g.run();
     }
 }
 
