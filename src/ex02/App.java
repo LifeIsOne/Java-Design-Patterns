@@ -5,6 +5,7 @@ public class App {
         Mouse mouse = new Mouse();
         Tiger tiger = new Tiger();
         DoormanProxy2 doorman = new DoormanProxy2(new Doorman());
+        doorman.getOut(mouse);
         doorman.getOut(tiger);
     }
 }
