@@ -4,6 +4,6 @@ public class BasicNotifier implements Notifier{
 
     // 재정의
     public void send(){
-        System.out.println("default notification");
+        System.out.println("📣Basic notification");
     }
 }

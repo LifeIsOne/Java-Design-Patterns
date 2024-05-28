@@ -1,20 +1,20 @@
 package ex06.notification;
 
-public class EmailNotifier implements Notifier{
-
+public class SmsNotifier implements Notifier{
+    // 컴포지션
     private Notifier notifier;
 
-    public EmailNotifier(Notifier notifier) {
+    public SmsNotifier(Notifier notifier) {
         this.notifier = notifier;
     }
 
-    // 디폴트 값
-    public EmailNotifier() {}
+    public SmsNotifier() {
+    }
 
 
     // 재정의
     public void send(){
         if (notifier != null) notifier.send(); // + 기능확장
-        System.out.println("💌Email notification");
+        System.out.println("💭SMS  Notification");
     }
 }
